@@ -35,7 +35,7 @@ void i2cScan(){
             if( 0x68 == address ) SerialScan.print("  DS1307 RTC");
             if( 0x27 == (address|0x7) ) SerialScan.print("  PCF8574 /LCD interface");
             if( 0x57 == (address|0x7) ) SerialScan.print("  24Cxx EEPROM");
-            SerialScan.println("");    
+            SerialScan.println("");//Midoux    
          }
       }
 
